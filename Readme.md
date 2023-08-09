@@ -54,3 +54,53 @@ Libraries provides the developer with pre-defined code which contains with class
 -> When aync is used fetching of script happens parllel to the html parsing and once fetching is done the html parsing stops and then execution script occurs 
 -> when defer is used fetching will done parllel to html parsing and the execution will be done after the total html parsing is done
   these sync and defer are boolean attributes
+
+  What is NPM?
+  -> It contains all packages It manages the packages
+  -> npm manages dependecies
+  ->npm install dependencies to our project
+  ->npm is installed through Node.js
+  ->All npm packages are defined in package.json
+
+  What is parcel or webpack? why do we need it?
+  -> these are npm package bundlers which helps to make our project faster these help the code to bundle and helps to perfectly work in production.These bundlers give several properties like make production fast helps to host in our local server caching compress the files code splitting...etc
+
+  What is a .parcel-cache?
+  -> It helps to fasten our development it will store the code of our project when we rebulids the project it doesn't have to check from the scratch
+
+  What is npx?
+  ->npx helps to execute our project or  host our project
+
+  devdependencies vs dependencies?
+  ->dependencies help to run the project while dev dependencies are used to develop and testing purpose but not used to run the project
+
+  Treeshaking
+  ->Removes the unwanted code it removes the functions and classes which are unused in bundle 
+
+  What is HMR?
+  ->HMR stands for Hot MOdule Replacement When a file changes saved we have to reload the application to see the changes However HMR makes easy with the changes it will gives the application changes without reloading ,While creating changes there will be a creation of hot updated file which is done by bundler the hot updated file is send to HMR server The HMR runtime will accept the requests from HMR server
+
+  Parcel Feauturea :-
+  ->Treeshaking
+  ->HMR(Hot Module Replacement)
+  ->caching : It will cache all the changes and by default stored in .parcel-cache .It cache changed files and rebuild in dist .It only rebuilds the changed files
+  ->Dev server : Parcel’s builtin dev server is automatically started when you run the default parcel command, which is a shortcut for parcel serve. By default, it starts a server at http://localhost:1234. If port 1234 is already in use, then a fallback port will be used. After Parcel starts, the location where the dev server is listening will be printed to the terminal.
+  ->Image Optimization : The expensive thing in the web application is Image loading ehich will be optimized by parcel
+
+  What is .gitignore?
+  ->.gitignore is used for the files which we dont need in git these files can be regenerated so these files makes lots of memory so we dont need these git if we want while developing simple we can regenrate bcoz we have the package.json and package-lock.json
+  ->The files which can be regenrated are add into .gitignore 
+
+  Difference between package.json and package-lock.json?
+  ->Package.json is to keep the track of the version of the packages whereas package-lock.json is to keep exact track of the version ,The package.json file can be changes the package-lock.json we dont have to change this
+
+  why package.json file cant be changed?
+  it should not be modified it is automatically generated where npm modifies node_modules tree or package.json
+
+  What is node modules?is it important to pudh to git?
+  ->Node modules provides a way to reuse the code it contains alla the pcakages which bundler needs it need not be pushed to git because we can regenarate using npm install
+
+  What is dist folder?
+  ->dist folder contains the minimized version of code
+
+  Browsers list :- It is for in which browsers our application has to run
